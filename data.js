@@ -18,6 +18,9 @@ let data = {
   numCriteriaMet: 0
 };
 
+// Run this globally to ensure data is loaded from file immediately.
+data = JSON.parse(String(READ_INPUT));
+
 // Modify data functions.
 function getData() {
   return data;
