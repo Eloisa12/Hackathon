@@ -2,7 +2,7 @@ import { getData, setData } from './data.js';
 
 import * as readline from "readline";
 
-function collectUserData() {
+export function collectUserData() {
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
@@ -39,9 +39,7 @@ function collectUserData() {
                                   //console.log(`Hello, ${name}!`);
                                   setData(filter);
                                   rl.close();
-                                });
-                                setData(filter);
-                                rl.close();
+                                });                                
                               });
                           });
                       });
@@ -53,6 +51,5 @@ function collectUserData() {
 
 }
 
-collectUserData();
 
 
