@@ -9,7 +9,7 @@ export function match() {
     for (let i = 0; i < medicList.length; i++) {
 
         let criteriaMatches = 0
-        //check if service for user gievn issue is provided
+        //check if service for user given issue is provided
         if (medicList[i].Services.includes(usrInput.Service) || usrInput.Service == -1) {
             criteriaMatches++;
         }
@@ -20,7 +20,7 @@ export function match() {
         }
 
         //check age
-        if (medicList[i].Age[0] >= usrInput.Age || medicList[i].Age[1] <= usrInput.Age || usrInput.Age == -1) {
+        if (medicList[i].Age == usrInput.Age || usrInput.Age == -1) {
             criteriaMatches++;
         }
 
