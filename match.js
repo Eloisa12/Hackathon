@@ -1,8 +1,11 @@
-export function match(medicList, usrInput) {
+
+export function match(usrInput) {
+    let medicList = getData();
+
   for (let i = 0; i < medicList.length; i++) {
       criteriaMatches = 0
       //check if service for user gievn issue is provided
-      if (medicList.service.includes(usrInput.service) || medicList.service == -1) {
+      if (medicList[i].service.includes(usrInput.service) || medicList[i].service == -1) {
           criteriaMatches++;
       }
 
@@ -17,7 +20,7 @@ export function match(medicList, usrInput) {
       }
 
       //check religion
-      if (medicList.inlcudes(usrInput.religion) || usrInput.religion == -1) {
+      if (medicList[i].inlcudes(usrInput.religion) || usrInput.religion == -1) {
           criteriaMatches++;
       }
 
@@ -27,5 +30,7 @@ export function match(medicList, usrInput) {
       }
 
       usrInput.numCriteriaMet = criteriaMatches;
+
+      setData(medicList);
   }
 } 
