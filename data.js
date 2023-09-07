@@ -14,6 +14,7 @@ let data = {
     day: -1,
     time: -1
   },
+  sorting: 0,
   numCriteriaMet: 0
 };
 
