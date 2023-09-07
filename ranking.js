@@ -10,8 +10,8 @@ function sortByDistance(hospital1, hospital2) {
 
 function sortedHospitals() {
     const availableHospitals = [];
-    for (h of hospitals) {
-        const hospital = getData();
+    const hospitals = getData();
+    for (hospital of hospitals) {
         if (hospital.criteriaMet = true) {
             availableHospitals.push(hospital);
         }
