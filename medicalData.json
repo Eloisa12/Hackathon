@@ -15,7 +15,7 @@
     "Services": ["Psychiatry", "Emergency Care", "Pathology", "Physiotherapy"],
     "Public": "True",
     "Gender": "All",
-    "Languages": []
+    "Languages": ["English"]
   }, {
       "Name": "Kim Private Clinic",
       "Location": {"x": -33.87780218844152, "y": 151.14009179907808},
@@ -32,7 +32,7 @@
       "Services": ["General Practioner"],
       "Public": "False",
       "Gender": "All",
-      "Languages": ["Telegu"]
+      "Languages": ["Telegu", "English"]
   }, {
       "Name": "Stella Private Clinic",
       "Location": {"x": -33.78972381460839, "y": 150.84764028128984},
@@ -49,7 +49,7 @@
       "Services": ["General Practioner", "Vaccinations"],
       "Public": "False",
       "Gender": "All",
-      "Languages": []
+      "Languages": ["English"]
   }, {
       "Name": "THE KIMBINATION Children's Hospital",
       "Location": {"x": -33.80757289673882, "y": 151.01806156662695},
@@ -79,7 +79,7 @@
         "Saturday": "10:00 AM - 3:00 PM",
         "Sunday": "Closed"
       },
-      "Age": ["Adults, Elderly"],
+      "Age": ["Adults", "Elderly"],
       "Services": ["Pyschiatry", "Orthodontics", "Acupuncture", "Obstetrics"],
       "Public": "True",
       "Gender": "Female",
@@ -100,7 +100,7 @@
       "Services": ["Pyschiatry", "Orthodontics"],
       "Public": "True",
       "Gender": "Male",
-      "Languages": ["Korean, Chinese"]
+      "Languages": ["Korean", "Chinese", "English"]
   },
   {
       "Name": "24/7 Convenient Clinic",
@@ -114,11 +114,11 @@
         "Saturday": "0:00 AM - 23:59 PM",
         "Sunday": "0:00 AM - 23:59 PM"
       },
-      "Age": ["Children, Adults, Elderly"],
+      "Age": ["Children", "Adults", "Elderly"],
       "Services": ["General Practioner", "Pharmacy"],
       "Public": "True",
       "Gender": "All",
-      "Languages": []
+      "Languages": ["English"]
   }, {
       "Name": "John's clinic",
       "Location": {"x": -33.77126073135585, "y": 151.02970171095808},
@@ -135,6 +135,6 @@
       "Services": ["Urology"],
       "Public": "True",
       "Gender": "Male",
-      "Languages": ["Italian, French"]
+      "Languages": ["Italian", "French", "English"]
   }]
 }

@@ -7,10 +7,10 @@ let data = {
   Age: -1,
   Location: -1,
   Service: -1,
-  Religion: -1,
+  Language: -1,
   Gender: -1,
   Public: -1,
-  Timings: {
+  timings: {
     day: -1,
     time: -1
   },

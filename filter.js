@@ -18,7 +18,7 @@ export function collectUserData() {
         rl.question('What service are you looking for? ', (service) => {
             filter.Service = service
             //console.log(`Hello, ${name}!`);
-            rl.question('What is your language? ', (language) => {
+            rl.question('What is your primary language? ', (language) => {
                 filter.Language = language
                 //console.log(`Hello, ${name}!`);
                 rl.question('What is your biological sex? ', (gender) => {
@@ -28,10 +28,10 @@ export function collectUserData() {
                         filter.Public = pub
                         //console.log(`Hello, ${name}!`);
                         rl.question('Which day are you planning to go? ', (day) => {
-                            filter.Timings.day = day
+                            filter.timings.day = day
                             //console.log(`Hello, ${name}!`);
                             rl.question('What time are you planning to go? ', (time) => {
-                                filter.Timings.time = time
+                                filter.timings.time = time
                                 //console.log(`Hello, ${name}!`);
                                 setData(filter);
                                 rl.close();                

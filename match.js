@@ -20,12 +20,12 @@ export function match() {
         }
 
         //check age
-        if (medicList[i].Age == usrInput.Age || usrInput.Age == -1) {
+        if (medicList[i].Age.includes(usrInput.Age) || usrInput.Age == -1) {
             criteriaMatches++;
         }
 
         //check religion
-        if (medicList[i].Religion.includes(usrInput.Religion) || usrInput.Religion == -1) {
+        if (medicList[i].Languages.includes(usrInput.Language) || usrInput.Language == -1) {
             criteriaMatches++;
         }
 
@@ -34,11 +34,16 @@ export function match() {
             criteriaMatches++;
         }
 
-        usrInput.numCriteriaMet = criteriaMatches;
-        console.log(usrInput.numCriteriaMet);
+        if (criteriaMatches == 5) {
+            usrInput.criteriaMet = true;
+        } else {
+            usrInput.criteriaMet = false;
+        }
+        setData(usrInput);
+
+        console.log(usrInput.criteriaMet);
         console.log(medicList[i]);
 
-        setData(usrInput);
     }
 } 
 
