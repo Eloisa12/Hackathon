@@ -1,6 +1,6 @@
-
-export function match(usrInput) {
-    let medicList = getData();
+function match() {
+    let usrInput = getData();
+    medicList = getJSON();
 
   for (let i = 0; i < medicList.length; i++) {
       criteriaMatches = 0
@@ -34,3 +34,27 @@ export function match(usrInput) {
       setData(medicList);
   }
 } 
+
+function getJSON() {
+    fetch("./medicalData.json")
+        .then((res) => {
+        return res.json();
+    })
+    .then((data) => {return data});
+}
+
+const readline = require('readline');
+
+function collectUserName() {
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
+
+  rl.question('Please enter your name: ', (name) => {
+    //console.log(`Hello, ${name}!`);
+    rl.close();
+  });
+}
+
+collectUserName();
