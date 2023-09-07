@@ -2,6 +2,7 @@
   "hospital": [{
     "name": "City General Hospital",
     "address": "123 Main St Blacktown NSW 2148, Sydney, Australia",
+    "coordinates": {"x": -33.771000, "y": 150.906296},
     "timings": {
       "monday": "8:00 AM - 6:00 PM",
       "tuesday": "8:00 AM - 6:00 PM",
@@ -19,6 +20,7 @@
   }, {
       "name": "Kim Private Clinic",
       "address": "20 Kingston St Haberfield NSW 2045, Sydney, Australia",
+      "coordinates": {"x": -33.87780218844152, "y": 151.14009179907808},
       "timings": {
         "monday": "8:00 AM - 6:00 PM",
         "tuesday": "8:00 AM - 6:00 PM",
@@ -29,13 +31,14 @@
         "sunday": "9:00 AM - 11:00 PM"
       },
       "age": "[0,200]",
-      "Services": [],
+      "Services": ["General Practioner"],
       "Public": "False",
       "Gender": "All",
-      "Religion": ["Islam", "Hindu", "Buddisum", "Christianity"]
+      "Religion": ["Islam", "Hindu", "Buddhism", "Christianity"]
   }, {
-      "name": "Kim Private Clinic",
+      "name": "Stella Private Clinic",
       "address": "20 Kington Street, Sydney, Australia",
+      "coordinates": {"x": -33.78972381460839, "y": 150.84764028128984},
       "timings": {
         "monday": "8:00 AM - 6:00 PM",
         "tuesday": "8:00 AM - 6:00 PM",
@@ -53,6 +56,7 @@
   }, {
       "name": "THE KIMBINATION Children's Hospital",
       "address": "15 Mason St North Parramatta NSW 2151, Sydney, Australia",
+      "coordinates": {"x": -33.80757289673882, "y": 151.01806156662695},
       "timings": {
         "monday": "8:00 AM - 6:00 PM",
         "tuesday": "Closed",
@@ -70,6 +74,7 @@
   }, {
       "name": "WIT Women's Heath Service",
       "address": "15 Anzac Pde, Kensington, Sydney, Australia",
+      "coordinates": {"x": -33.90519485673446, "y": 151.2235492081037},
       "timings": {
         "monday": "8:00 AM - 5:00 PM",
         "tuesday": "8:00 AM - 5:00 PM",
@@ -87,6 +92,7 @@
   }, {
       "name": "Potoo Health Services",
       "address": "10 Therry Street, Strathfield South, Sydney, NSW",
+      "coordinates": {"x": -33.892631964741476, "y": 151.07975269628852},
       "timings": {
         "monday": "8:00 AM - 6:00 PM",
         "tuesday": "8:00 AM - 6:00 PM",
@@ -105,6 +111,7 @@
   {
       "name": "24/7 Convenient Clinic",
       "address": "247 Pitt Street, Waterloo, NSW 2017",
+      "coordinates": {"x": -33.89768148247772, "y": 151.2041935257028},
       "timings": {
         "monday": "0:00 AM - 23:59 PM",
         "tuesday": "0:00 AM - 23:59 PM",
@@ -115,13 +122,14 @@
         "sunday": "0:00 AM - 23:59 PM"
       },
       "age": "[0,200]",
-      "Services": ["GP", "Pharmacy"],
+      "Services": ["General Practioner", "Pharmacy"],
       "Public": "True",
       "Gender": "All",
       "Religion": []
   }, {
       "name": "John's clinic",
       "address": "2 Paragon Drive, Sydney, NSW",
+      "coordinates": {"x": -33.77126073135585, "y": 151.02970171095808},
       "timings": {
         "monday": "8:00 AM - 6:00 PM",
         "tuesday": "8:00 AM - 6:00 PM",
