@@ -3,7 +3,7 @@ import hospitals from "./medicalData.json" assert { type: 'json' };
 
 export function match() {
     let usrInput = getData();
-    let medicList = hospitals.hospital;
+    let medicList = hospitals.Hospital;
     //console.log(medicList);
 
     for (let i = 0; i < medicList.length; i++) {
@@ -41,4 +41,6 @@ export function match() {
         setData(usrInput);
     }
 } 
+
+match();
 

@@ -11,35 +11,30 @@ export function collectUserData() {
   let filter = getData();
 
   rl.question('What is your age? ', (age) => {
-    filter.age = age
+    filter.Age = age
     rl.question('Where are you? ', (location) => {
-        filter.location = location
+        filter.Location = location
         //console.log(`Hello, ${name}!`);
         rl.question('What service are you looking for? ', (service) => {
-            filter.service = service
+            filter.Service = service
             //console.log(`Hello, ${name}!`);
             rl.question('What is your religion? ', (religion) => {
-                filter.religion = religion
+                filter.Religion = religion
                 //console.log(`Hello, ${name}!`);
                 rl.question('What is your biological sex? ', (gender) => {
-                    filter.gender = gender
+                    filter.Gender = gender
                     //console.log(`Hello, ${name}!`);
                     rl.question('Are you looking for public health service? ', (pub) => {
-                        filter.public = pub
+                        filter.Public = pub
                         //console.log(`Hello, ${name}!`);
                         rl.question('Which day are you planning to go? ', (day) => {
-                            filter.timings.day = day
+                            filter.Timings.day = day
                             //console.log(`Hello, ${name}!`);
                             rl.question('What time are you planning to go? ', (time) => {
-                                filter.timings.time = time
+                                filter.Timings.time = time
                                 //console.log(`Hello, ${name}!`);
-                                rl.question('What sorting method? ', (sorting) => {
-                                  // 0 for distance(default), 1 for relevance
-                                  filter.sorting = sorting
-                                  //console.log(`Hello, ${name}!`);
-                                  setData(filter);
-                                  rl.close();
-                                });                                
+                                setData(filter);
+                                rl.close();                
                               });
                           });
                       });
@@ -50,6 +45,8 @@ export function collectUserData() {
   });
 
 }
+
+collectUserData();
 
 
 

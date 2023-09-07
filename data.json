@@ -1,1 +1,1 @@
-{"age":"12","location":"12,12","service":"GP","religion":"Hindu","gender":"Female","public":"True","timings":{"day":"1","time":"12"},"numCriteriaMet":1}
+{"age":"12","location":"12,12","service":"GP","religion":"Hindu","gender":"Female","public":"True","timings":{"day":"Mon","time":"12"},"numCriteriaMet":0,"sorting":"Distance"}

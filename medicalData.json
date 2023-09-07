@@ -15,7 +15,7 @@
     "Services": ["Psychiatry", "Emergency Care", "Pathology", "Physiotherapy"],
     "Public": "True",
     "Gender": "All",
-    "Religion": []
+    "Languages": []
   }, {
       "Name": "Kim Private Clinic",
       "Location": {"x": -33.87780218844152, "y": 151.14009179907808},
@@ -32,7 +32,7 @@
       "Services": ["General Practioner"],
       "Public": "False",
       "Gender": "All",
-      "Religion": ["Islam", "Hindu", "Buddhism", "Christianity"]
+      "Religion": []
   }, {
       "Name": "Stella Private Clinic",
       "Location": {"x": -33.78972381460839, "y": 150.84764028128984},
@@ -49,7 +49,7 @@
       "Services": ["General Practioner", "Vaccinations"],
       "Public": "False",
       "Gender": "All",
-      "Religion": ["Islam", "Hindu", "Buddisum", "Christianity"]
+      "Languages": []
   }, {
       "Name": "THE KIMBINATION Children's Hospital",
       "Location": {"x": -33.80757289673882, "y": 151.01806156662695},
@@ -66,7 +66,7 @@
       "Services": ["Psychiatry", "Emergency Care", "Pathology", "Physiotherapy", "Cardiology"],
       "Public": "False",
       "Gender": "All",
-      "Religion": ["Islam", "Hindu", "Buddisum", "Christianity"]
+      "Languages": ["Islam", "Hindu", "Buddisum", "Christianity"]
   }, {
       "Name": "WIT Women's Heath Service",
       "Location": {"x": -33.90519485673446, "y": 151.2235492081037},
@@ -83,7 +83,7 @@
       "Services": ["Pyschiatry", "Orthodontics", "Acupuncture", "Obstetrics"],
       "Public": "True",
       "Gender": "Female",
-      "Religion": ["Islam", "Hindu", "Buddisum", "Christianity"]
+      "Languages": []
   }, {
       "Name": "Potoo Health Services",
       "Location": {"x": -33.892631964741476, "y": 151.07975269628852},
@@ -100,7 +100,7 @@
       "Services": ["Pyschiatry", "Orthodontics"],
       "Public": "True",
       "Gender": "Male",
-      "Religion": ["Jehovah's Witness"]
+      "Languages": ["Jehovah's Witness"]
   },
   {
       "Name": "24/7 Convenient Clinic",
@@ -118,7 +118,7 @@
       "Services": ["General Practioner", "Pharmacy"],
       "Public": "True",
       "Gender": "All",
-      "Religion": []
+      "Languages": []
   }, {
       "Name": "John's clinic",
       "Location": {"x": -33.77126073135585, "y": 151.02970171095808},
@@ -135,6 +135,6 @@
       "Services": ["Urology"],
       "Public": "True",
       "Gender": "Male",
-      "Religion": []
+      "Languages": []
   }]
 }
