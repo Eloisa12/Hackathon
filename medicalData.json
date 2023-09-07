@@ -11,7 +11,7 @@
       "saturday": "9:00 AM - 3:00 PM",
       "sunday": "Closed"
     },
-    "age": "0-200",
+    "age": "[0,200]",
     "Services": ["Psychiatry", "Emergency Care", "Pathology", "Physiotherapy"],
     "Public": "True",
     "Gender": "All",
@@ -28,7 +28,7 @@
         "saturday": "9:00 AM - 3:00 PM",
         "sunday": "9:00 AM - 11:00 PM"
       },
-      "age": "0-200",
+      "age": "[0,200]",
       "Services": [],
       "Public": "False",
       "Gender": "All",
@@ -45,7 +45,7 @@
         "saturday": "9:00 AM - 3:00 PM",
         "sunday": "9:00 AM - 11:00 PM"
       },
-      "age": "0-200",
+      "age": "[0,200]",
       "Services": ["General Practioner", "Vaccinations"],
       "Public": "False",
       "Gender": "All",
@@ -62,7 +62,7 @@
         "saturday": "Closed",
         "sunday": "Closed"
       },
-      "age": "0-17",
+      "age": "[0,17]",
       "Services": ["Psychiatry", "Emergency Care", "Pathology", "Physiotherapy", "Cardiology"],
       "Public": "False",
       "Gender": "All",
@@ -79,7 +79,7 @@
         "saturday": "10:00 AM - 3:00 PM",
         "sunday": "Closed"
       },
-      "age": "20-50",
+      "age": "[20,50]",
       "Services": ["Pyschiatry", "Orthodontics", "Acupuncture", "Obstetrics"],
       "Public": "True",
       "Gender": "Female",
@@ -96,7 +96,7 @@
         "saturday": "9:00 AM - 3:00 PM",
         "sunday": "Closed"
       },
-      "age": "0-14",
+      "age": "[0,14]",
       "Services": ["Pyschiatry", "Orthodontics"],
       "Public": "True",
       "Gender": "Male",
@@ -114,7 +114,7 @@
         "saturday": "0:00 AM - 23:59 PM",
         "sunday": "0:00 AM - 23:59 PM"
       },
-      "age": "0-200",
+      "age": "[0,200]",
       "Services": ["GP", "Pharmacy"],
       "Public": "True",
       "Gender": "All",
@@ -131,7 +131,7 @@
         "saturday": "closed",
         "sunday": "Closed"
       },
-      "age": "0-30",
+      "age": "[0,30]",
       "Services": ["Urology"],
       "Public": "True",
       "Gender": "Male",
