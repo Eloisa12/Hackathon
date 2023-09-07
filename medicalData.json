@@ -1,145 +1,137 @@
 {
-  "hospital": [{
-    "name": "City General Hospital",
-    "address": "123 Main St Blacktown NSW 2148, Sydney, Australia",
-    "coordinates": {"x": -33.771000, "y": 150.906296},
-    "timings": {
-      "monday": "8:00 AM - 6:00 PM",
-      "tuesday": "8:00 AM - 6:00 PM",
-      "wednesday": "8:00 AM - 6:00 PM",
-      "thursday": "8:00 AM - 8:00 PM",
-      "friday": "8:00 AM - 6:00 PM",
-      "saturday": "9:00 AM - 3:00 PM",
-      "sunday": "Closed"
+  "Hospital": [{
+    "Name": "City General Hospital",
+    "Location": {"x": -33.771000, "y": 150.906296},
+    "Timings": {
+      "Monday": "8:00 AM - 6:00 PM",
+      "Tuesday": "8:00 AM - 6:00 PM",
+      "Wednesday": "8:00 AM - 6:00 PM",
+      "Thursday": "8:00 AM - 8:00 PM",
+      "Friday": "8:00 AM - 6:00 PM",
+      "Saturday": "9:00 AM - 3:00 PM",
+      "Sunday": "Closed"
     },
-    "age": "[0,200]",
+    "Age": "[0,200]",
     "Services": ["Psychiatry", "Emergency Care", "Pathology", "Physiotherapy"],
     "Public": "True",
     "Gender": "All",
     "Religion": []
   }, {
-      "name": "Kim Private Clinic",
-      "address": "20 Kingston St Haberfield NSW 2045, Sydney, Australia",
-      "coordinates": {"x": -33.87780218844152, "y": 151.14009179907808},
-      "timings": {
-        "monday": "8:00 AM - 6:00 PM",
-        "tuesday": "8:00 AM - 6:00 PM",
-        "wednesday": "8:00 AM - 6:00 PM",
-        "thursday": "8:00 AM - 8:00 PM",
-        "friday": "8:00 AM - 6:00 PM",
-        "saturday": "9:00 AM - 3:00 PM",
-        "sunday": "9:00 AM - 11:00 PM"
+      "Name": "Kim Private Clinic",
+      "Location": {"x": -33.87780218844152, "y": 151.14009179907808},
+      "Timings": {
+        "Monday": "8:00 AM - 6:00 PM",
+        "Tuesday": "8:00 AM - 6:00 PM",
+        "Wednesday": "8:00 AM - 6:00 PM",
+        "Thursday": "8:00 AM - 8:00 PM",
+        "Friday": "8:00 AM - 6:00 PM",
+        "Saturday": "9:00 AM - 3:00 PM",
+        "Sunday": "9:00 AM - 11:00 PM"
       },
-      "age": "[0,200]",
+      "Age": "[0,200]",
       "Services": ["General Practioner"],
       "Public": "False",
       "Gender": "All",
       "Religion": ["Islam", "Hindu", "Buddhism", "Christianity"]
   }, {
-      "name": "Stella Private Clinic",
-      "address": "20 Kington Street, Sydney, Australia",
-      "coordinates": {"x": -33.78972381460839, "y": 150.84764028128984},
-      "timings": {
-        "monday": "8:00 AM - 6:00 PM",
-        "tuesday": "8:00 AM - 6:00 PM",
-        "wednesday": "8:00 AM - 6:00 PM",
-        "thursday": "8:00 AM - 8:00 PM",
-        "friday": "8:00 AM - 6:00 PM",
-        "saturday": "9:00 AM - 3:00 PM",
-        "sunday": "9:00 AM - 11:00 PM"
+      "Name": "Stella Private Clinic",
+      "Location": {"x": -33.78972381460839, "y": 150.84764028128984},
+      "Timings": {
+        "Monday": "8:00 AM - 6:00 PM",
+        "Tuesday": "8:00 AM - 6:00 PM",
+        "Wednesday": "8:00 AM - 6:00 PM",
+        "Thursday": "8:00 AM - 8:00 PM",
+        "Friday": "8:00 AM - 6:00 PM",
+        "Saturday": "9:00 AM - 3:00 PM",
+        "Sunday": "9:00 AM - 11:00 PM"
       },
-      "age": "[0,200]",
+      "Age": "[0,200]",
       "Services": ["General Practioner", "Vaccinations"],
       "Public": "False",
       "Gender": "All",
       "Religion": ["Islam", "Hindu", "Buddisum", "Christianity"]
   }, {
-      "name": "THE KIMBINATION Children's Hospital",
-      "address": "15 Mason St North Parramatta NSW 2151, Sydney, Australia",
-      "coordinates": {"x": -33.80757289673882, "y": 151.01806156662695},
-      "timings": {
-        "monday": "8:00 AM - 6:00 PM",
-        "tuesday": "Closed",
-        "wednesday": "Closed",
-        "thursday": "Closed",
-        "friday": "Closed",
-        "saturday": "Closed",
-        "sunday": "Closed"
+      "Name": "THE KIMBINATION Children's Hospital",
+      "Location": {"x": -33.80757289673882, "y": 151.01806156662695},
+      "Timings": {
+        "Monday": "8:00 AM - 6:00 PM",
+        "Tuesday": "Closed",
+        "Wednesday": "Closed",
+        "Thursday": "Closed",
+        "Friday": "Closed",
+        "Saturday": "Closed",
+        "Sunday": "Closed"
       },
-      "age": "[0,17]",
+      "Age": "[0,17]",
       "Services": ["Psychiatry", "Emergency Care", "Pathology", "Physiotherapy", "Cardiology"],
       "Public": "False",
       "Gender": "All",
       "Religion": ["Islam", "Hindu", "Buddisum", "Christianity"]
   }, {
-      "name": "WIT Women's Heath Service",
-      "address": "15 Anzac Pde, Kensington, Sydney, Australia",
-      "coordinates": {"x": -33.90519485673446, "y": 151.2235492081037},
-      "timings": {
-        "monday": "8:00 AM - 5:00 PM",
-        "tuesday": "8:00 AM - 5:00 PM",
-        "wednesday": "8:00 AM - 5:00 PM",
-        "thursday": "8:00 AM - 5:00 PM",
-        "friday": "10:00 AM - 3:00 PM",
-        "saturday": "10:00 AM - 3:00 PM",
-        "sunday": "Closed"
+      "Name": "WIT Women's Heath Service",
+      "Location": {"x": -33.90519485673446, "y": 151.2235492081037},
+      "Timings": {
+        "Monday": "8:00 AM - 5:00 PM",
+        "Tuesday": "8:00 AM - 5:00 PM",
+        "Wednesday": "8:00 AM - 5:00 PM",
+        "Thursday": "8:00 AM - 5:00 PM",
+        "Friday": "10:00 AM - 3:00 PM",
+        "Saturday": "10:00 AM - 3:00 PM",
+        "Sunday": "Closed"
       },
-      "age": "[20,50]",
+      "Age": "[20,50]",
       "Services": ["Pyschiatry", "Orthodontics", "Acupuncture", "Obstetrics"],
       "Public": "True",
       "Gender": "Female",
       "Religion": ["Islam", "Hindu", "Buddisum", "Christianity"]
   }, {
-      "name": "Potoo Health Services",
-      "address": "10 Therry Street, Strathfield South, Sydney, NSW",
-      "coordinates": {"x": -33.892631964741476, "y": 151.07975269628852},
-      "timings": {
-        "monday": "8:00 AM - 6:00 PM",
-        "tuesday": "8:00 AM - 6:00 PM",
-        "wednesday": "8:00 AM - 6:00 PM",
-        "thursday": "Closed",
-        "friday": "8:00 AM - 6:00 PM",
-        "saturday": "9:00 AM - 3:00 PM",
-        "sunday": "Closed"
+      "Name": "Potoo Health Services",
+      "Location": {"x": -33.892631964741476, "y": 151.07975269628852},
+      "Timings": {
+        "Monday": "8:00 AM - 6:00 PM",
+        "Tuesday": "8:00 AM - 6:00 PM",
+        "Wednesday": "8:00 AM - 6:00 PM",
+        "Thursday": "Closed",
+        "Friday": "8:00 AM - 6:00 PM",
+        "Saturday": "9:00 AM - 3:00 PM",
+        "Sunday": "Closed"
       },
-      "age": "[0,14]",
+      "Age": "[0,14]",
       "Services": ["Pyschiatry", "Orthodontics"],
       "Public": "True",
       "Gender": "Male",
       "Religion": ["Jehovah's Witness"]
   },
   {
-      "name": "24/7 Convenient Clinic",
-      "address": "247 Pitt Street, Waterloo, NSW 2017",
-      "coordinates": {"x": -33.89768148247772, "y": 151.2041935257028},
-      "timings": {
-        "monday": "0:00 AM - 23:59 PM",
-        "tuesday": "0:00 AM - 23:59 PM",
-        "wednesday": "0:00 AM - 23:59 PM",
-        "thursday": "0:00 AM - 23:59 PM",
-        "friday": "0:00 AM - 23:59 PM",
-        "saturday": "0:00 AM - 23:59 PM",
-        "sunday": "0:00 AM - 23:59 PM"
+      "Name": "24/7 Convenient Clinic",
+      "Location": {"x": -33.89768148247772, "y": 151.2041935257028},
+      "Timings": {
+        "Monday": "0:00 AM - 23:59 PM",
+        "Tuesday": "0:00 AM - 23:59 PM",
+        "Wednesday": "0:00 AM - 23:59 PM",
+        "Thursday": "0:00 AM - 23:59 PM",
+        "Friday": "0:00 AM - 23:59 PM",
+        "Saturday": "0:00 AM - 23:59 PM",
+        "Sunday": "0:00 AM - 23:59 PM"
       },
-      "age": "[0,200]",
+      "Age": "[0,200]",
       "Services": ["General Practioner", "Pharmacy"],
       "Public": "True",
       "Gender": "All",
       "Religion": []
   }, {
-      "name": "John's clinic",
-      "address": "2 Paragon Drive, Sydney, NSW",
-      "coordinates": {"x": -33.77126073135585, "y": 151.02970171095808},
-      "timings": {
-        "monday": "8:00 AM - 6:00 PM",
-        "tuesday": "8:00 AM - 6:00 PM",
-        "wednesday": "8:00 AM - 6:00 PM",
-        "thursday": "Closed",
-        "friday": "8:00 AM - 6:00 PM",
-        "saturday": "closed",
-        "sunday": "Closed"
+      "Name": "John's clinic",
+      "Location": {"x": -33.77126073135585, "y": 151.02970171095808},
+      "Timings": {
+        "Monday": "8:00 AM - 6:00 PM",
+        "Tuesday": "8:00 AM - 6:00 PM",
+        "Wednesday": "8:00 AM - 6:00 PM",
+        "Thursday": "Closed",
+        "Friday": "8:00 AM - 6:00 PM",
+        "Saturday": "closed",
+        "Sunday": "Closed"
       },
-      "age": "[0,30]",
+      "Age": "[0,30]",
       "Services": ["Urology"],
       "Public": "True",
       "Gender": "Male",
