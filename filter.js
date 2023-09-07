@@ -33,6 +33,13 @@ function collectUserData() {
                             rl.question('What time are you planning to go? ', (time) => {
                                 filter.timings.time = time
                                 //console.log(`Hello, ${name}!`);
+                                rl.question('What sorting method? ', (sorting) => {
+                                  // 0 for distance(default), 1 for relevance
+                                  filter.sorting = sorting
+                                  //console.log(`Hello, ${name}!`);
+                                  setData(filter);
+                                  rl.close();
+                                });
                                 setData(filter);
                                 rl.close();
                               });
