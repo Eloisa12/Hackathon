@@ -15,5 +15,4 @@ function sortedHospitals() {
     return availableHospitals;
 }
 
-
 export {sortByDistance, sortedHospitals};
