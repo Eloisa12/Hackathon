@@ -11,7 +11,7 @@
       "Saturday": "9:00 AM - 3:00 PM",
       "Sunday": "Closed"
     },
-    "Age": "[0,200]",
+    "Age": ["Children", "Adults", "Elderly"],
     "Services": ["Psychiatry", "Emergency Care", "Pathology", "Physiotherapy"],
     "Public": "True",
     "Gender": "All",
@@ -28,11 +28,11 @@
         "Saturday": "9:00 AM - 3:00 PM",
         "Sunday": "9:00 AM - 11:00 PM"
       },
-      "Age": "[0,200]",
+      "Age": ["Children", "Adults"],
       "Services": ["General Practioner"],
       "Public": "False",
       "Gender": "All",
-      "Religion": []
+      "Languages": ["Telegu"]
   }, {
       "Name": "Stella Private Clinic",
       "Location": {"x": -33.78972381460839, "y": 150.84764028128984},
@@ -45,7 +45,7 @@
         "Saturday": "9:00 AM - 3:00 PM",
         "Sunday": "9:00 AM - 11:00 PM"
       },
-      "Age": "[0,200]",
+      "Age": ["Adults"],
       "Services": ["General Practioner", "Vaccinations"],
       "Public": "False",
       "Gender": "All",
@@ -62,11 +62,11 @@
         "Saturday": "Closed",
         "Sunday": "Closed"
       },
-      "Age": "[0,17]",
+      "Age": ["Children"],
       "Services": ["Psychiatry", "Emergency Care", "Pathology", "Physiotherapy", "Cardiology"],
       "Public": "False",
       "Gender": "All",
-      "Languages": ["Islam", "Hindu", "Buddisum", "Christianity"]
+      "Languages": ["Vietnamese"]
   }, {
       "Name": "WIT Women's Heath Service",
       "Location": {"x": -33.90519485673446, "y": 151.2235492081037},
@@ -79,11 +79,11 @@
         "Saturday": "10:00 AM - 3:00 PM",
         "Sunday": "Closed"
       },
-      "Age": "[20,50]",
+      "Age": ["Adults, Elderly"],
       "Services": ["Pyschiatry", "Orthodontics", "Acupuncture", "Obstetrics"],
       "Public": "True",
       "Gender": "Female",
-      "Languages": []
+      "Languages": ["Vietnamese", "Chinese", "Thai", "Telegu"]
   }, {
       "Name": "Potoo Health Services",
       "Location": {"x": -33.892631964741476, "y": 151.07975269628852},
@@ -96,11 +96,11 @@
         "Saturday": "9:00 AM - 3:00 PM",
         "Sunday": "Closed"
       },
-      "Age": "[0,14]",
+      "Age": ["Children"],
       "Services": ["Pyschiatry", "Orthodontics"],
       "Public": "True",
       "Gender": "Male",
-      "Languages": ["Jehovah's Witness"]
+      "Languages": ["Korean, Chinese"]
   },
   {
       "Name": "24/7 Convenient Clinic",
@@ -114,7 +114,7 @@
         "Saturday": "0:00 AM - 23:59 PM",
         "Sunday": "0:00 AM - 23:59 PM"
       },
-      "Age": "[0,200]",
+      "Age": ["Children, Adults, Elderly"],
       "Services": ["General Practioner", "Pharmacy"],
       "Public": "True",
       "Gender": "All",
@@ -131,10 +131,10 @@
         "Saturday": "closed",
         "Sunday": "Closed"
       },
-      "Age": "[0,30]",
+      "Age": ["Children, Adults"],
       "Services": ["Urology"],
       "Public": "True",
       "Gender": "Male",
-      "Languages": []
+      "Languages": ["Italian, French"]
   }]
 }
