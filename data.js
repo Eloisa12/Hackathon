@@ -14,7 +14,7 @@ let data = {
     day: -1,
     time: -1
   },
-  criteriaMet: false
+  criteriaMet: []
 };
 
 // Run this globally to ensure data is loaded from file immediately.

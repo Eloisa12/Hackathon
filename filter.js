@@ -10,7 +10,7 @@ export function collectUserData() {
   
   let filter = getData();
 
-  rl.question('Pick an age catergory [Child, Adult, Elderly]? ', (age) => {
+  rl.question('Pick an age catergory [Children, Adult, Elderly]? ', (age) => {
     filter.Age = age
     rl.question('Where are you? ', (location) => {
         filter.Location = location

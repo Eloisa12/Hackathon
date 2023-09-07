@@ -35,16 +35,15 @@ export function match() {
         }
 
         if (criteriaMatches == 5) {
-            usrInput.criteriaMet = true;
-        } else {
-            usrInput.criteriaMet = false;
+            usrInput.criteriaMet.push(medicList[i])
         }
-        setData(usrInput);
 
-        console.log(usrInput.criteriaMet);
-        console.log(medicList[i]);
-
+        // console.log(usrInput.criteriaMet);
     }
+
+    setData(usrInput);
+    //console.log(usrInput.criteriaMet);
+
 } 
 
 match();
