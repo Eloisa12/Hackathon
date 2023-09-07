@@ -1,60 +1,57 @@
+import { getData, setData } from './data.js';
+import hospitals from "./medicalData.json" assert { type: 'json' };
+
 function match() {
     let usrInput = getData();
-    medicList = getJSON();
+    let medicList = hospitals.hospital;
+    //console.log(medicList);
 
-  for (let i = 0; i < medicList.length; i++) {
-      criteriaMatches = 0
-      //check if service for user gievn issue is provided
-      if (medicList[i].service.includes(usrInput.service) || medicList[i].service == -1) {
-          criteriaMatches++;
-      }
+    // const medicList = require('./medicalData.json');
 
-      //check gender
-      if (medicList[i].gender == usrInput.gender || medicList[i].gender == "All" || usrInput.gender == -1) {
-          criteriaMatches++;
-      }
+    // let medicList = JSON.parse(medicalData.json);
 
-      //check age
-      if (medicList[i].age[0] >= usrInput.age || medicList[i].age[1] <= usrInput.age || usrInput.age == -1) {
-          criteriaMatches++;
-      }
+    for (let i = 0; i < medicList.length; i++) {
 
-      //check religion
-      if (medicList[i].inlcudes(usrInput.religion) || usrInput.religion == -1) {
-          criteriaMatches++;
-      }
+        let criteriaMatches = 0
+        //check if service for user gievn issue is provided
+        if (medicList[i].Services.includes(usrInput.service) || usrInput.service == -1) {
+            criteriaMatches++;
+        }
 
-      //check public
-      if (medicList.public == -1 || medicList.public == usrInput.public) {
-          criteriaMatches++;
-      }
+        //check gender
+        if (medicList[i].gender == usrInput.gender || medicList[i].gender == "All" || usrInput.gender == -1) {
+            criteriaMatches++;
+        }
 
-      usrInput.numCriteriaMet = criteriaMatches;
+        //check age
+        if (medicList[i].age[0] >= usrInput.age || medicList[i].age[1] <= usrInput.age || usrInput.age == -1) {
+            criteriaMatches++;
+        }
 
-      setData(medicList);
-  }
+        //check religion
+        if (medicList[i].Religion.includes(usrInput.religion) || usrInput.religion == -1) {
+            criteriaMatches++;
+        }
+
+        //check public
+        if (medicList[i].public == -1 || medicList[i].public == usrInput.public) {
+            criteriaMatches++;
+        }
+
+        usrInput.numCriteriaMet = criteriaMatches;
+        console.log(usrInput.numCriteriaMet);
+        console.log(medicList[i]);
+
+        setData(usrInput);
+    }
 } 
 
-function getJSON() {
-    fetch("./medicalData.json")
-        .then((res) => {
-        return res.json();
-    })
-    .then((data) => {return data});
-}
+// function getJSON() {
+//     fetch("./medicalData.json")
+//         .then((res) => {
+//         return res.json();
+//     })
+//     .then((data) => {return data});
+// }
 
-const readline = require('readline');
-
-function collectUserName() {
-  const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-  });
-
-  rl.question('Please enter your name: ', (name) => {
-    //console.log(`Hello, ${name}!`);
-    rl.close();
-  });
-}
-
-collectUserName();
+match()
