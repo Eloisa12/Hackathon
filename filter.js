@@ -10,7 +10,7 @@ export function collectUserData() {
   
   let filter = getData();
 
-  rl.question('What is your age? ', (age) => {
+  rl.question('Pick an age catergory [Child, Adult, Elderly]? ', (age) => {
     filter.Age = age
     rl.question('Where are you? ', (location) => {
         filter.Location = location
@@ -18,8 +18,8 @@ export function collectUserData() {
         rl.question('What service are you looking for? ', (service) => {
             filter.Service = service
             //console.log(`Hello, ${name}!`);
-            rl.question('What is your religion? ', (religion) => {
-                filter.Religion = religion
+            rl.question('What is your language? ', (language) => {
+                filter.Language = language
                 //console.log(`Hello, ${name}!`);
                 rl.question('What is your biological sex? ', (gender) => {
                     filter.Gender = gender
