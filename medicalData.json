@@ -12,7 +12,7 @@
       "Sunday": "Closed"
     },
     "Age": ["Children", "Adults", "Elderly"],
-    "Services": ["Psychiatry", "Emergency Care", "Pathology", "Physiotherapy"],
+    "Services": ["Pyschiatry", "Emergency Care", "Pathology", "Physiotherapy"],
     "Public": "True",
     "Gender": "All",
     "Languages": ["English"]
@@ -63,7 +63,7 @@
         "Sunday": "Closed"
       },
       "Age": ["Children"],
-      "Services": ["Psychiatry", "Emergency Care", "Pathology", "Physiotherapy", "Cardiology"],
+      "Services": ["Pyschiatry", "Emergency Care", "Pathology", "Physiotherapy", "Cardiology"],
       "Public": "False",
       "Gender": "All",
       "Languages": ["Vietnamese"]
@@ -131,10 +131,27 @@
         "Saturday": "closed",
         "Sunday": "Closed"
       },
-      "Age": ["Children, Adults"],
+      "Age": ["Children", "Adults"],
       "Services": ["Urology"],
       "Public": "True",
       "Gender": "Male",
       "Languages": ["Italian", "French", "English"]
-  }]
+  }, {
+    "Name": "Mary's clinic",
+    "Location": {"x": -33.77126073135585, "y": 151.02970171095808},
+    "Timings": {
+      "Monday": "8:00 AM - 6:00 PM",
+      "Tuesday": "8:00 AM - 6:00 PM",
+      "Wednesday": "8:00 AM - 6:00 PM",
+      "Thursday": "Closed",
+      "Friday": "8:00 AM - 6:00 PM",
+      "Saturday": "closed",
+      "Sunday": "Closed"
+    },
+    "Age": ["Children", "Adults"],
+    "Services": ["Pyschiatry"],
+    "Public": "True",
+    "Gender": "Female",
+    "Languages": ["Italian", "French", "English"]
+ }]
 }

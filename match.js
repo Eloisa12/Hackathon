@@ -4,7 +4,6 @@ import hospitals from "./medicalData.json" assert { type: 'json' };
 export function match() {
     let usrInput = getData();
     let medicList = hospitals.Hospital;
-    //console.log(medicList);
 
     for (let i = 0; i < medicList.length; i++) {
 
@@ -24,7 +23,7 @@ export function match() {
             criteriaMatches++;
         }
 
-        //check religion
+        //check langugae
         if (medicList[i].Languages.includes(usrInput.Language) || usrInput.Language == -1) {
             criteriaMatches++;
         }
@@ -37,14 +36,8 @@ export function match() {
         if (criteriaMatches == 5) {
             usrInput.criteriaMet.push(medicList[i])
         }
-
-        // console.log(usrInput.criteriaMet);
     }
 
     setData(usrInput);
-    //console.log(usrInput.criteriaMet);
-
 } 
-
-match();
 

@@ -7,16 +7,14 @@ export function sortByDistance(hospital1, hospital2) {
     setHospitaldistance();
 
     if (hospital1.distance > hospital2.distance) {
-
-        // console.log(hospital1.distance - hospital2.distance);
         return hospital1.distance - hospital2.distance;
     }
-    // console.log(hospital1.criteria - hospital2.criteria)
+
     return hospital1.criteria - hospital2.criteria;
 }
 
 export function sortedHospitals() {
-    const availableHospitals = [];
+    let availableHospitals = [];
     const hospitals = getData().criteriaMet;
     availableHospitals = hospitals.sort(sortByDistance);
     return availableHospitals;

@@ -1,6 +1,8 @@
 import { getData, setData } from './data.js';
 import hospitals from "./medicalData.json" assert { type: 'json' };
 
+
+// Got code from online source
 export function calculateDistance(lat1, lon1, lat2, lon2) {
     const R = 6371; // Earth's radius in kilometers
   
@@ -22,11 +24,6 @@ export function setHospitaldistance(){
     let userInput = getData();
     
     for (let hospital of userInput.criteriaMet) {
-        // console.log(userInput.Location.x)
-        // console.log(userInput.Location.y)
-        // console.log(hospital.Location.x)
-        // console.log(hospital.Location.y)
-
         let result = calculateDistance(userInput.Location.x, userInput.Location.y, hospital.Location.x, hospital.Location.y);
         // add new property of distance to hospital respective to user location
         hospital.distance = result;

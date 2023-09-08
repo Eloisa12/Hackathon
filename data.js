@@ -39,9 +39,12 @@ function saveData() {
 }
 
 function clear() {
-  const newData = {
+  let newData = {
     Age: -1,
-    Location: -1,
+    Location: {
+      x: -1,
+      y: -1
+    },
     Service: -1,
     Language: -1,
     Gender: -1,

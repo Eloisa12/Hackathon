@@ -16,27 +16,20 @@ export function collectUserData() {
     filter.Age = age
     rl.question('What\'s your x coordinate? ', (xCoord) => {
         filter.Location.x = xCoord
-        //console.log(`Hello, ${name}!`);
         rl.question('What\'s your y coordinate? ', (yCoord) => {
             filter.Location.y = yCoord
         rl.question('What service are you looking for? ', (service) => {
             filter.Service = service
-            //console.log(`Hello, ${name}!`);
             rl.question('What is your primary language? ', (language) => {
                 filter.Language = language
-                //console.log(`Hello, ${name}!`);
                 rl.question('What is your biological sex? ', (gender) => {
                     filter.Gender = gender
-                    //console.log(`Hello, ${name}!`);
                     rl.question('Are you looking for public health service? ', (pub) => {
                         filter.Public = pub
-                        //console.log(`Hello, ${name}!`);
                         rl.question('Which day are you planning to go? ', (day) => {
                             filter.timings.day = day
-                            //console.log(`Hello, ${name}!`);
                             rl.question('What time are you planning to go? ', (time) => {
                                 filter.timings.time = time
-                                //console.log(`Hello, ${name}!`);
                                 setData(filter);
                                 match();
                                 console.log(sortedHospitals());
