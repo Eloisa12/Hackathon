@@ -1,18 +1,24 @@
+import { sort } from "semver";
 import { getData } from "./data.js";
+import {setHospitaldistance} from "./distanceCalculate.js";
 import hospitals from "./medicalData.json" assert { type: 'json' };
 
-function sortByDistance(hospital1, hospital2) {
+export function sortByDistance(hospital1, hospital2) {
+    setHospitaldistance();
+
     if (hospital1.distance > hospital2.distance) {
+
+        // console.log(hospital1.distance - hospital2.distance);
         return hospital1.distance - hospital2.distance;
     }
+    // console.log(hospital1.criteria - hospital2.criteria)
     return hospital1.criteria - hospital2.criteria;
 }
 
-function sortedHospitals() {
-    let availableHospitals = [];
+export function sortedHospitals() {
+    const availableHospitals = [];
     const hospitals = getData().criteriaMet;
     availableHospitals = hospitals.sort(sortByDistance);
     return availableHospitals;
 }
 
-export {sortByDistance, sortedHospitals};
