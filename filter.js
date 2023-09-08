@@ -1,4 +1,6 @@
-import { getData, setData } from './data.js';
+import { clear, getData, setData } from './data.js';
+import {match} from "./match.js"
+import {sortedHospitals} from "./ranking.js";
 
 import * as readline from "readline";
 
@@ -7,7 +9,7 @@ export function collectUserData() {
     input: process.stdin,
     output: process.stdout,
   });
-  
+  clear();
   let filter = getData();
 
   rl.question('Pick an age catergory [Children, Adult, Elderly]? ', (age) => {
@@ -34,6 +36,9 @@ export function collectUserData() {
                                 filter.timings.time = time
                                 //console.log(`Hello, ${name}!`);
                                 setData(filter);
+                                match();
+                                console.log(sortedHospitals());
+                                clear();
                                 rl.close();                
                               });
                           });

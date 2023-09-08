@@ -35,4 +35,24 @@ function saveData() {
   fs.writeFileSync(FILE_PATH, jsonStr, { flag: 'w' });
 }
 
-export { getData, setData };
+function clear() {
+  const newData = {
+    Age: -1,
+    Location: -1,
+    Service: -1,
+    Language: -1,
+    Gender: -1,
+    Public: -1,
+    timings: {
+      day: -1,
+      time: -1
+    },
+    criteriaMet: []
+  };
+
+  setData(newData);
+
+  return {};
+}
+
+export { getData, setData, clear };

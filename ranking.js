@@ -9,8 +9,8 @@ function sortByDistance(hospital1, hospital2) {
 }
 
 function sortedHospitals() {
-    const availableHospitals = [];
-    const hospitals = getData();
+    let availableHospitals = [];
+    const hospitals = getData().criteriaMet;
     availableHospitals = hospitals.sort(sortByDistance);
     return availableHospitals;
 }
