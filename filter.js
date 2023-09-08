@@ -12,9 +12,11 @@ export function collectUserData() {
 
   rl.question('Pick an age catergory [Children, Adult, Elderly]? ', (age) => {
     filter.Age = age
-    rl.question('Where are you? ', (location) => {
-        filter.Location = location
+    rl.question('What\'s your x coordinate? ', (xCoord) => {
+        filter.Location.x = xCoord
         //console.log(`Hello, ${name}!`);
+        rl.question('What\'s your y coordinate? ', (yCoord) => {
+            filter.Location.y = yCoord
         rl.question('What service are you looking for? ', (service) => {
             filter.Service = service
             //console.log(`Hello, ${name}!`);
@@ -42,6 +44,7 @@ export function collectUserData() {
               });
           });
       });
+    });
   });
 
 }
